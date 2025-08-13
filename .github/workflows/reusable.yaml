@@ -1,0 +1,11 @@
+name: Main Workflow Calling Reusable Workflow
+
+on: push
+  
+jobs:
+  call-build:
+    uses: somyasinha15/action-demo-2/.github/workflows/Deplyment1.yaml@main
+    with:
+      node_version: '18'
+ 
+      
