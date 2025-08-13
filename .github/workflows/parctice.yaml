@@ -27,5 +27,7 @@ jobs:
             - name: Install Dependencies
               run: npm install
             - name: Deploy
-              run: echo "deploying..."
+              run: |
+                echo "deploying..."
+                echo ${{github.actor}}
 
